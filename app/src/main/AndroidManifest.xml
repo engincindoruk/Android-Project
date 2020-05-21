@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carturkeyy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".BireyselilanMessageActivity"></activity>
+        <activity android:name=".Models.FirstScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AllilanCommentsActivity" />
+        <activity android:name=".AllilandetayDamageActivity" />
+        <activity android:name=".VeriftForgotPasswordActivity" />
+        <activity android:name=".RefreshPasswordActivity" />
+        <activity
+            android:name=".FavorieIlanActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AboutInformationActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AllilanlarDetayActivity"
+            android:parentActivityName=".AllilanlarActivity" />
+        <activity
+            android:name=".AllilanlarActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".BireyselilanActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".CarAdd_7Activity" />
+        <activity android:name=".CarAdd_6Activity" />
+        <activity
+            android:name=".CarAdd_5Activity"
+            android:parentActivityName=".CarAdd_4Activity" />
+        <activity
+            android:name=".CarAdd_4Activity"
+            android:parentActivityName=".CarAdd_3Activity" />
+        <activity
+            android:name=".CarAdd_3Activity"
+            android:parentActivityName=".CarAdd_2Activity" />
+        <activity
+            android:name=".CarAdd_2Activity"
+            android:parentActivityName=".CarAdd_1Activity" />
+        <activity
+            android:name=".CarAdd_1Activity"
+            android:parentActivityName=".ModelActivity" />
+        <activity
+            android:name=".ModelActivity"
+            android:parentActivityName=".BrandActivity" />
+        <activity
+            android:name=".BrandActivity"
+            android:parentActivityName=".YearActivity" />
+        <activity
+            android:name=".YearActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".VerificationActivity" />
+        <activity
+            android:name=".RegisterScreen2"
+            android:parentActivityName=".RegisterScreen" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".RegisterScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+</manifest>

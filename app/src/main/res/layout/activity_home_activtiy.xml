@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layouthomepagesslider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/homepageslider"
+            android:layout_height="match_parent" />
+        <me.relex.circleindicator.CircleIndicator
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:ci_drawable="@drawable/slidernokta"
+            app:ci_drawable_unselected="@drawable/slidernoktaother"
+            android:id="@+id/homepagesliderNokta"
+            android:gravity="center"
+
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layouthomepagesslider"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/btnshowalladvert"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:text="25336 advert is here"
+               android:textColor="#fff"
+               android:textSize="20dp"
+               android:background="@drawable/buttonbackground"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="15dp">
+           </Button>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnAllAdvert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="ALL ADVERT"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/homemenu"
+                android:drawableTop="@drawable/car2"
+                android:paddingTop="15dp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+            <Button
+                android:id="@+id/btnadvert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Add advert"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/homemenu"
+                android:drawableTop="@drawable/notes"
+                android:paddingTop="15dp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnFavadvert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Favori advert"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/homemenu"
+                android:drawableTop="@drawable/favoriler"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnContactInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Contact Information"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/homemenu"
+                android:drawableTop="@drawable/usser"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+            <Button
+                android:id="@+id/btnMessage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="messages"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/homemenu"
+                android:drawableTop="@drawable/mesaj2"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnMyadvert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="My Advert"
+                android:paddingTop="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/homemenu"
+                android:drawableTop="@drawable/myadvert"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
